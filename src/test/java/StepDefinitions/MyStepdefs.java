@@ -7,50 +7,38 @@ import io.cucumber.java.en.When;
 import org.testng.Assert;
 
 import java.io.IOException;
-import java.net.MalformedURLException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class MyStepdefs extends setup {
     @When("Change Temperature unit from C to F")
-    public void changeTemperatureUnitFromCToF() throws InterruptedException {
+    public void changeTemperatureUnitFromCToF()  {
         waitForElementVisibility(SideBarMenu,5);
         driver.findElement(SideBarMenu).click();
-        Thread.sleep(500);
         waitForElementVisibility(UnitSettingBTN,5);
         driver.findElement(UnitSettingBTN).click();
-        Thread.sleep(400);
         waitForElementVisibility(TempList,5);
         driver.findElement(TempList).click();
         waitForElementVisibility(FUnitTemp,5);
         driver.findElement(FUnitTemp).click();
         waitForElementVisibility(DoneBTN,5);
         driver.findElement(DoneBTN).click();
-        Thread.sleep(700);
     }
     @Then("Assert on main Weather screen that Temperature unit is F")
-    public void assertOnMainWeatherScreenThatTemperatureUnitIsF() throws InterruptedException {
+    public void assertOnMainWeatherScreenThatTemperatureUnitIsF() {
         waitForElementVisibility(TempUitInHome,5);
         Assert.assertTrue(driver.findElement(TempUitInHome).getText().contains("F"));
     }
     @Then("Change Time format from 24 to 12")
-    public void changeTimeFormat24FromTo12() throws InterruptedException {
-        Thread.sleep(200);
+    public void changeTimeFormat24FromTo12() {
         waitForElementVisibility(SideBarMenu,5);
         this.driver.findElement(SideBarMenu).click();
-        Thread.sleep(500);
         waitForElementVisibility(UnitSettingBTN,5);
         this.driver.findElement(UnitSettingBTN).click();
-        Thread.sleep(500);
         waitForElementVisibility(TimeFormatList,5);
         driver.findElement(TimeFormatList).click();
         waitForElementVisibility(_12Hour,5);
         driver.findElement(_12Hour).click();
         waitForElementVisibility(DoneBTN,5);
         driver.findElement(DoneBTN).click();
-        Thread.sleep(700);
     }
     @Then("Assert on main Weather screen that Time format is 12")
     public void assertOnMainWeatherScreenThatTimeFormatIs12() {
@@ -65,18 +53,15 @@ public class MyStepdefs extends setup {
         Assert.assertEquals(driver.findElements(HumidityIcons).size(), expectedNumberOfHours);
     }
     @Given("Open Weather Forecast App")
-    public void openWeatherForecastApp() throws IOException, InterruptedException {
+    public void openWeatherForecastApp() throws IOException {
         setUp();
         waitForElementVisibility(DoneBTN,5);
         driver.findElement(DoneBTN).click();
         //click on GOT IT button
-        Thread.sleep(500);
         waitForElementVisibility(GotItBTN,5);
         driver.findElement(GotItBTN).click();
-        Thread.sleep(500);
         waitForElementVisibility(AllowLocationBTN,5);
         driver.findElement(AllowLocationBTN).click();
-        Thread.sleep(5000);
     }
     @Then("Close the App")
     public void closeTheApp() {

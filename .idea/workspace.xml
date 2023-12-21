@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9e84411-b193-41d7-a834-a64e05c1044e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="a9e84411-b193-41d7-a834-a64e05c1044e" name="Changes" comment="weather app testing">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/MyStepdefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/MyStepdefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utilties/setup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilties/setup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +57,9 @@
   <component name="RunManager" selected="Cucumber Java.Feature: WeatherAppTesting">
     <configuration name="Feature: WeatherAppTesting" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <envs>
+        <env name="CUCUMBER_PUBLISH_TOKEN" value="f149077b-8357-48f4-ba6e-4f43a28100ba" />
+      </envs>
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/WeatherAppTesting.feature" />
       <option name="GLUE" value="StepDefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
@@ -144,6 +143,18 @@
       <option name="presentableId" value="Default" />
       <updated>1703103922246</updated>
     </task>
+    <task id="LOCAL-00001" summary="weather app testing">
+      <created>1703174858584</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1703174858584</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="weather app testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="weather app testing" />
   </component>
 </project>
