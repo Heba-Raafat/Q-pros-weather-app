@@ -30,7 +30,7 @@ public class Helpers{
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability("platformVersion", prop.getProperty("platformVersion"));
         capabilities.setCapability("deviceName", prop.getProperty("deviceName"));
-        capabilities.setCapability("app",projectPath + prop.getProperty("app"));
+        capabilities.setCapability("bundleId",prop.getProperty("bundleId"));
         capabilities.setCapability("automationName",prop.getProperty("automationName"));
         return capabilities;
     }
