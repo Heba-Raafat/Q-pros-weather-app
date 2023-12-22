@@ -21,7 +21,6 @@ public class Helpers{
         String platform = prop.getProperty("PLATFORM");
         return platform;
     }
-
     public static DesiredCapabilities android_desiredCapabilities() throws IOException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         Properties prop = new Properties();
@@ -29,14 +28,12 @@ public class Helpers{
         InputStream inputFile = new FileInputStream(projectPath+"/src/test/android.properties");
         prop.load(inputFile);
         capabilities.setCapability("platformName", "Android");
-        //prop.getProperty("platformName")
         capabilities.setCapability("platformVersion", prop.getProperty("platformVersion"));
         capabilities.setCapability("deviceName", prop.getProperty("deviceName"));
         capabilities.setCapability("app",projectPath + prop.getProperty("app"));
         capabilities.setCapability("automationName",prop.getProperty("automationName"));
         return capabilities;
     }
-
     public static DesiredCapabilities IoS_desiredCapabilities() throws IOException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         Properties prop = new Properties();
