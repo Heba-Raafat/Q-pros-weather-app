@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9e84411-b193-41d7-a834-a64e05c1044e" name="Changes" comment="weather app testing">
+    <list default="true" id="a9e84411-b193-41d7-a834-a64e05c1044e" name="Changes" comment="optimize imports">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Utilties/AndroidLogic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/android.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/android.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/MyStepdefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/MyStepdefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utilties/setup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilties/setup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utilties/Helpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilties/Helpers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utilties/setup.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,20 +101,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="setup.setUp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AndroidLogic.setUp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Whether-App" />
       <option name="PACKAGE_NAME" value="Utilties" />
-      <option name="MAIN_CLASS_NAME" value="Utilties.setup" />
+      <option name="MAIN_CLASS_NAME" value="Utilties.AndroidLogic" />
       <option name="METHOD_NAME" value="setUp" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="setup.setUp" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AndroidLogic.setUp" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Whether-App" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Utilties.setup" />
+      <option name="MAIN_CLASS_NAME" value="Utilties.AndroidLogic" />
       <option name="METHOD_NAME" value="setUp" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -123,14 +126,14 @@
     <list>
       <item itemvalue="Cucumber Java.Feature: WeatherAppTesting" />
       <item itemvalue="Cucumber Java.Scenario: Changing Temperature unit from C to F and assertions on main Weather screen" />
-      <item itemvalue="JUnit.setup.setUp" />
-      <item itemvalue="TestNG.setup.setUp" />
+      <item itemvalue="JUnit.AndroidLogic.setUp" />
+      <item itemvalue="TestNG.AndroidLogic.setUp" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Cucumber Java.Scenario: Changing Temperature unit from C to F and assertions on main Weather screen" />
-        <item itemvalue="TestNG.setup.setUp" />
-        <item itemvalue="JUnit.setup.setUp" />
+        <item itemvalue="TestNG.AndroidLogic.setUp" />
+        <item itemvalue="JUnit.AndroidLogic.setUp" />
       </list>
     </recent_temporary>
   </component>
@@ -150,11 +153,19 @@
       <option name="project" value="LOCAL" />
       <updated>1703174858584</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="optimize imports">
+      <created>1703175387224</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1703175387224</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="weather app testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="weather app testing" />
+    <MESSAGE value="optimize imports" />
+    <option name="LAST_COMMIT_MESSAGE" value="optimize imports" />
   </component>
 </project>
